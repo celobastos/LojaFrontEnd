@@ -1,0 +1,52 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  transition: top 0.3s;
+    box-sizing: border-box;
+   
+  }
+  
+  .topbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    align-items: end;
+  }
+  
+  .topbar.hidden {
+    top: -100px; 
+  }
+  
+  body:hover .topbar.hidden {
+    top: 0;
+  }
+  .links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .searchbar {
+    margin-left: auto;
+  }
+
+  .searchbar input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+  }

@@ -1,0 +1,110 @@
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 94%;
+    height: 50vh; 
+    padding: 3%; 
+    background-color: #eecea2; 
+    padding-top: 10vh;
+  }
+  
+  .text-container {
+    flex: 1;
+    
+    max-width: 30%;
+    background-color: #eecea2; 
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .text-container p {
+    font-size: 1.5em; 
+  }
+  
+  .form-container {
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-right: 7%;
+    max-width: 45%;
+  }
+  
+  .inner-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  }
+  
+  .form-item {
+    margin: 1vh 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-item label {
+    margin-bottom: 0.5vh;
+    font-size: 0.8em; 
+  }
+  
+  input[type="text"], input[type="number"], input[type="url"], .submit-button, textarea.large-text {
+    padding: 1vh;
+    border-radius: 0.5vh;
+    border: 1px solid #ccc; 
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  textarea.large-text {
+    height: 15vh;
+    resize: vertical; 
+    overflow-wrap: break-word; 
+    white-space: pre-wrap; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    vertical-align: top; 
+  }
+  
+  .small-input input, .large-input textarea {
+    margin-top: 0.5vh;
+  }
+  
+  .submit-button {
+    padding: 1vh;
+    margin-top: 0.4vh;
+    border-radius: 0.5vh;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    width: 100%; 
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 1vh;
+  }
+  
+  .tooltip {
+    position: fixed;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: #a7e9a9;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
