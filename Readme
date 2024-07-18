@@ -1,0 +1,58 @@
+# Produtos Frontend
+
+Este é um projeto frontend para gerenciamento de produtos, desenvolvido com React e TypeScript. Ele permite visualizar, adicionar e listar produtos, se comunicando com uma API backend.
+
+## Tecnologias Utilizadas
+
+- React
+- TypeScript
+- Axios (para requisições HTTP)
+- CSS Modules
+- Fontes personalizadas
+
+**Clone o repositório:**
+
+```bash
+git clone https://github.com/seu-usuario/produtos-frontend.git
+cd produtos-frontend
+
+Instale as dependências:
+npm install
+
+Configure a URL da API:
+No arquivo src/service/api.ts, ajuste a URL base para a URL da sua API backend:
+
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: 'http://localhost:3000/api', // Ajuste esta URL conforme necessário
+});
+
+export default api;
+
+npm start
+
+
+Estrutura dos Componentes
+App.tsx
+Este é o componente principal que reúne todos os outros componentes e gerencia o estado dos produtos.
+
+TopBar.tsx
+Um componente que representa a barra superior do aplicativo.
+
+HomeScreen.tsx
+Um componente que exibe a tela inicial do aplicativo.
+
+ProductForm.tsx
+Um componente para adicionar novos produtos.
+
+ProductList.tsx
+Um componente que lista todos os produtos.
+
+api.ts
+Configuração do Axios para fazer requisições HTTP para a API backend.
+
+fonts.css
+Arquivo de estilos para importar fontes personalizadas.
+
+O site foi deployado no vercel, contudo sem o condicionamento do backend, que não foi deployado no heroku. Contudo, é possivel acessar as funcionalidades do site, rodando o backend localmente e acessando o site pelo vercel.
